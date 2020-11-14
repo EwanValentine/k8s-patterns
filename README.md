@@ -13,7 +13,7 @@ import (
 )
 
 func main() {
-	app := patterns.NewApp("ais-service")
+	app := patterns.NewApp("my-namespace")
 
 	container := patterns.NewContainer(patterns.ContainerConfig{
 		Name: "test",
