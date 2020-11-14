@@ -2,6 +2,8 @@
 
 Library for creating Kubernetes resources programmatically.
 
+Status: WIP. Feel free to chip in!
+
 ## Example
 
 ```golang
