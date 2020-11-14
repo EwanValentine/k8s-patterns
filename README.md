@@ -27,6 +27,9 @@ func main() {
 	deployment.AddContainer(container)
 
 	service := patterns.NewService(patterns.ServiceConfig{})
+	
+	// Automatically references correct container port,
+	// Exposes the same port as the service port.
 	service.SetDeployment(deployment)
 
 	//ingress := patterns.NewIngress(patterns.IngressConfig{})
@@ -38,5 +41,8 @@ func main() {
 		Deploy(); err != nil {
 		log.Panic(err)
 	}
+	
+	// To print as a string first...
+	// app.Preview()
 }
 ```
